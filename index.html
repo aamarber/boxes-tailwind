@@ -5,34 +5,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
     <title>Layout</title>
-    <style>
-        .box{
-            min-width: 10em;
-            max-width: 10em;
-            border: solid 2px black;
-            font-family: Arial, Helvetica, sans-serif;
-            font-weight: bold;
-        }
-    </style>
 </head>
-<body>
-    <div class="box" id="a">
-        <span>A</span>
+<body class="h-screen flex flex-wrap">
+    <div class="flex flex-row bg-a w-screen">
+        <div class="box bg-b text-white m-10" id="a">
+            <span>A</span>
+        </div>
+        <div class="box bg-b text-white m-10 ml-auto mt-auto" id="b">
+            <span>B</span>
+        </div>
     </div>
-    <div class="box" id="b">
-        <span>B</span>
+    <div class="flex bg-c w-7/12">
+        <div class="box bg-d order-2 mt-10" id="c">
+            <span>C</span>
+        </div>
+        <div class="box bg-d order-1 ml-auto mt-10" id="d">
+            <span>D</span>
+        </div>
+        <div class="box bg-d order-3 m-10 mt-auto" id="e">
+            <span>E</span>
+        </div>
     </div>
-    <div class="box" id="c">
-        <span>C</span>
-    </div>
-    <div class="box" id="d">
-        <span>D</span>
-    </div>
-    <div class="box" id="e">
-        <span>E</span>
-    </div>
-    <div class="box" id="f">
+    <div class="box bg-e w-5/12" id="f">
         <span>F</span>
     </div>
 </body>

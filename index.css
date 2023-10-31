@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    .box{
+        @apply p-4 h-40 w-40 flex justify-center items-center;
+    }
+}
